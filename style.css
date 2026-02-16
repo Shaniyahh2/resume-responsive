@@ -15,7 +15,7 @@ body {
   padding: 20px;
 }
 
-/* Container for the whole resume */
+/* Resume container */
 .resume-container {
   max-width: 700px;
   margin: auto;
@@ -56,17 +56,49 @@ section h2 {
   padding-bottom: 5px;
 }
 
-/* Lists inside sections */
 ul {
   list-style-type: disc;
   margin-left: 20px;
 }
 
-/* ------------------------------
-   PROJECT IMAGES
------------------------------- */
+/* Project images */
 .project-img {
   width: 100%;
   border-radius: 8px;
   margin-top: 10px;
 }
+
+/* ------------------------------
+   DESKTOP LAYOUT (Responsive)
+------------------------------ */
+@media (min-width: 900px) {
+
+  body {
+    padding: 40px;
+  }
+
+  .resume-container {
+    max-width: 1200px;
+    padding: 40px;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  /* Two-column layout */
+  .two-column {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+  }
+
+  section h2 {
+    font-size: 26px;
+  }
+
+  p, li {
+    font-size: 18px;
+  }
+}
+
